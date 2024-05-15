@@ -21,6 +21,9 @@ jobs:
       - name: Installer les dépendances
         run: npm install
 
+      - name: Exécuter les tests
+        run: npm test
+
       - name: Construction du projet
         run: npm run build -- --output-path=docs   # Changez le chemin de sortie en docs
 
@@ -29,6 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: docs
-
 
 
