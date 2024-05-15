@@ -22,11 +22,12 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --output-path=dist/uni
+        run: npm run build -- --output-path=docs  # Changez le chemin de sortie en docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/uni
+          publish_dir: docs  # Changez le répertoire de publication en docs
+
 
