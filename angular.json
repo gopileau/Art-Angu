@@ -5,7 +5,7 @@
   "projects": {
     "uni": {
       "projectType": "application",
-      "root": "",  // Ajout de la propriété root
+      "root": "",  // Propriété root ajoutée
       "sourceRoot": "src",
       "prefix": "app",
       "schematics": {},
@@ -93,12 +93,6 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
-  }
-}
-
   },
   "cli": {
     "analytics": false
