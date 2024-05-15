@@ -27,7 +27,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/polyfills.ts",
+              "src/polyfills.ngtypecheck.ts"
+            ]
           },
           "configurations": {
             "production": {
