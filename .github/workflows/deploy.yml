@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main   # Déclencher l'action sur les push vers la branche "main"
-
 jobs:
   construire_et_deployer:
     runs-on: ubuntu-latest
@@ -32,5 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: docs
-
-
