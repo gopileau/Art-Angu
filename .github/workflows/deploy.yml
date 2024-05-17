@@ -25,10 +25,10 @@ jobs:
         run: npm test
 
       - name: Construction du projet
-        run: npm run build -- --output-path=src
+        run: npm run build -- --output-path=docs
 
       - name: Déployer sur les pages GitHub
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: src
+          publish_dir: /docs
