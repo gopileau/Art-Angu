@@ -13,8 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/Art-Angu/", // Ajouter cette ligne avec le chemin de base correct
-            "outputPath": "dist/uni",
+             "baseHref": "/Art-Angu/",
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -28,10 +28,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "src/polyfills.ts",
-              "src/polyfills.ngtypecheck.ts"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -69,12 +66,7 @@
           },
           "defaultConfiguration": "development"
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "uni:build"
-          }
-        },
+        
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
