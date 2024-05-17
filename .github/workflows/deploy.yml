@@ -16,16 +16,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.1.0'  
+          node-version: '22.1.0'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
-        run: npm run build -- --output-path=docs
+        run: npm run build -- --output-path=dist
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages-${{ github.run_id }}
+          path: dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+          publish_dir: dist
