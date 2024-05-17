@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --output-path=dist/uni
+        run: npm run build -- --output-path=src
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
