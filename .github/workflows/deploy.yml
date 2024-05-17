@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Déclencher l'action sur les pushs vers la branche "main"
+      - main 
 
 jobs:
   build-and-deploy:
