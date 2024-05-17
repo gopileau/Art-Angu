@@ -27,8 +27,21 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: github-pages-${{ github.run_id }}
+          name: github-pages-artifact
           path: dist
+
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages-artifact
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
