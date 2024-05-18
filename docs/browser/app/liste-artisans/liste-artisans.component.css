@@ -1,0 +1,32 @@
+.center-content {
+  margin: 0 auto;
+  width: 50%; 
+  list-style: none; 
+  text-align: center;
+  margin-bottom: 60px; 
+}
+app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.more-link {
+  text-decoration: none;
+  color: #fff;
+  background-color:#0074c7;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.more-link:hover {
+  background-color: #00497c;
+}
+
+
+
+
+  
+  

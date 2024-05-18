@@ -1,0 +1,72 @@
+<header>
+    <div class="logo-container"> 
+        <a routerLink="/"> 
+            <img src="assets/logo.png" alt="Logo de l'entreprise" class="logo-img">
+        </a>
+    </div>
+    <nav class="desktop-menu">
+        <ul>
+            <li><a routerLink="/batiment">Bâtiment</a></li>
+            <li><a routerLink="/services">Services</a></li>
+            <li><a routerLink="/fabrication">Fabrication</a></li>
+            <li><a routerLink="/alimentation">Alimentation</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-bar-container">
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher..." #searchInput (keyup)="onKey($event)">
+            <button class="search-button" (click)="search(searchInput.value)">
+                <img src="assets/lupe.png" alt="Rechercher" style="width: 15px; height: 15px;">
+            </button>
+        </div>
+        <div *ngIf="searchResults && searchResults.length > 0" class="search-results">
+            <ul>
+                <li *ngFor="let artisan of searchResults" (click)="navigateToArtisanList(artisan)">
+                    {{ artisan.name }} - {{ artisan.speciality }} - {{ artisan.location }}
+                  </li>
+                  
+              </ul>
+          </div>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'visible': mobileNavVisible}">
+        <a href="#" (click)="toggleMenu()">
+            <img src="assets/menu-icon.png" alt="Menu icon" height="30px" width="30px">
+        </a>
+        <div class="menu-list">
+            <ul>
+                <li><a routerLink="/batiment">Bâtiment</a></li>
+                <li><a routerLink="/services">Services</a></li>
+                <li><a routerLink="/fabrication">Fabrication</a></li>
+                <li><a routerLink="/alimentation">Alimentation</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

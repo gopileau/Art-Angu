@@ -1,0 +1,93 @@
+<app-header (search)="searchArtisans($event)"></app-header>
+<div class="artisan-list">
+  <!-- Catégorie Bâtiment -->
+  <h1>Liste des artisans</h1>
+  <div class="category" *ngIf="category === 'Bâtiment'">
+    <ul class="center-content">
+      <h2>Bâtiment</h2>
+      <li *ngFor="let artisan of artisans">
+        <div *ngIf="artisan.speciality === 'Menuisier'">
+          <div class="artisan-info">
+            <h3>{{ artisan.name }}</h3>
+            <div class="rating">
+              <span class="star" [class.full]="star" *ngFor="let star of artisan.stars">&#9733;</span>
+            </div>
+            <p>{{ artisan.speciality }}</p>
+            <p>{{ artisan.location }}</p>
+            <a [routerLink]="['/fiche-artisan', artisan.id, category]" class="more-link">Voir plus</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+<!-- Catégorie Services -->
+<div class="category" *ngIf="category === 'Services'">
+  <ul class="center-content">
+    <h2>Services</h2>
+    <li *ngFor="let artisan of artisans">
+      <div class="artisan-info">
+        <h3>{{ artisan.name }}</h3>
+        <div class="rating">
+          <span class="star" [class.full]="star" *ngFor="let star of artisan.stars">&#9733;</span>
+        </div>
+        <p>{{ artisan.speciality }}</p>
+        <p>{{ artisan.location }}</p>
+        <a [routerLink]="['/fiche-artisan', artisan.id, category]" class="more-link">Voir plus</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- Catégorie Fabrication -->
+<div class="category" *ngIf="category === 'Fabrication'">
+  <ul class="center-content">
+    <h2>Fabrication</h2>
+    <li *ngFor="let artisan of artisans">
+      <div *ngIf="artisan.speciality === 'Plombier'">
+        <div class="artisan-info">
+          <h3>{{ artisan.name }}</h3>
+          <div class="rating">
+            <span class="star" [class.full]="star" *ngFor="let star of artisan.stars">&#9733;</span>
+          </div>
+          <p>{{ artisan.speciality }}</p>
+          <p>{{ artisan.location }}</p>
+          <a [routerLink]="['/fiche-artisan', artisan.id, category]" class="more-link">Voir plus</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- Catégorie Alimentation -->
+<div class="category" *ngIf="category === 'Alimentation'">
+  <ul class="center-content">
+    <h2>Alimentation</h2>
+    <li *ngFor="let artisan of artisans">
+      <div *ngIf="artisan.speciality === 'Cuisinier'">
+        <div class="artisan-info">
+          <h3>{{ artisan.name }}</h3>
+          <div class="rating">
+            <span class="star" [class.full]="star" *ngFor="let star of artisan.stars">&#9733;</span>
+          </div>
+          <p>{{ artisan.speciality }}</p>
+          <p>{{ artisan.location }}</p>
+          <a [routerLink]="['/fiche-artisan', artisan.id, category]" class="more-link">Voir plus</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<app-footer></app-footer>
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  

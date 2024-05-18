@@ -1,0 +1,43 @@
+.contact-form {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px; /* Ajout de marge basse */
+  width: 400px; /* Largeur fixe du conteneur */
+  margin: 1rem auto; /* Margin automatique pour centrer horizontalement */
+}
+
+  
+
+
+.contact-form .form-group {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.contact-form button {
+  padding: 8px 15px;
+  background-color: #0074c7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005a9c;
+}
+
+
+  
