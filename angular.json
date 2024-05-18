@@ -6,27 +6,27 @@
     "uni": {
       "projectType": "application",
       "schematics": {},
-      "root": "/home/runner/work/Art-Angu/Art-Angu2/",
-      "sourceRoot": "docs/src",
+      "root": "",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/uni/",
-            "outputPath": "docs",
-            "index": "docs/src/index.html",
-            "browser": "docs/src/main.ts",
+             "baseHref": "/Art-Angu/",
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
             "polyfills": [
-              "docs/src/polyfills.ts"
+              "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "docs/src/favicon.ico",
-              "docs/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "docs/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -71,16 +71,16 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
-              "docs/src/polyfills.ts",
+              "zone.js",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "docs/src/favicon.ico",
-              "docs/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "docs/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
