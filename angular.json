@@ -6,7 +6,7 @@
     "uni": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "/Art-Angu2/",
       "sourceRoot": "docs/src",
       "prefix": "app",
       "architect": {
@@ -71,7 +71,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
-              "zone.js",
+              "docs/src/polyfills.ts",
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
