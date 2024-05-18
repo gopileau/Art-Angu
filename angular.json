@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/Art-Angu2/",
+            "baseHref": "/uni/",
             "outputPath": "docs",
             "index": "docs/src/index.html",
             "browser": "docs/src/main.ts",
