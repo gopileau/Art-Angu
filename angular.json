@@ -6,7 +6,7 @@
     "uni": {
       "projectType": "application",
       "schematics": {},
-      "root": "/Art-Angu2/",
+      "root": "/Users/laura/Art-Angu2/",
       "sourceRoot": "docs/src",
       "prefix": "app",
       "architect": {
