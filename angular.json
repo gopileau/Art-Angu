@@ -7,26 +7,26 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "docs/browser",
+      "sourceRoot": "docs",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/Art-Angu",
-            "outputPath": "docs/browser",
-            "index": "docs/browser/index.html",
-            "browser": "docs/browser/main.ts",
+            "outputPath": "docs",
+            "index": "docs/index.html",
+            "browser": "docs/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "docs/browser/favicon.ico",
-              "docs/browser/assets"
+              "docs/favicon.ico",
+              "docs/assets"
             ],
             "styles": [
-              "docs/browser/styles.css"
+              "docs/styles.css"
             ],
             "scripts": []
           },
@@ -76,11 +76,11 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "docs/browser/favicon.ico",
-              "docs/browser/assets"
+              "docs/favicon.ico",
+              "docs/assets"
             ],
             "styles": [
-              "docs/browser/styles.css"
+              "docs/styles.css"
             ],
             "scripts": []
           }
