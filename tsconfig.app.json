@@ -6,9 +6,11 @@
     "types": []
   },
   "files": [
-    "src/main.ts"
+    "docs/src/main.ts",
+    "docs/src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "docs/src/**/*.d.ts"
   ]
 }
+
