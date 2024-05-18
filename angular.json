@@ -18,7 +18,7 @@
             "index": "docs/src/index.html",
             "browser": "docs/src/main.ts",
             "polyfills": [
-              "zone.js"
+              "docs/src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
