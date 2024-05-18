@@ -25,7 +25,8 @@ jobs:
         run: npm run build -- --output-path=dist
 
       - name: Copy index.html
-        run: cp index.html docs/
+        run: cp dist/index.html docs/
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
